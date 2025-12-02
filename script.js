@@ -71,20 +71,35 @@ gallonsAt60 = total/28;
 gallonsAt75 = total/23;
 console.log( `Gallons of fuel needed at 55mph: ${gallonsAt55}\n`,
              `Gallons of fuel needed at 60mph: ${gallonsAt60}\n`,
-             `Gallons of fuel needed at 75mph: ${gallonsAt75}\n`
-)
+             `Gallons of fuel needed at 75mph: ${gallonsAt75}\n`);
+
 
 //Will your budget be enough to cover the fuel expense?
+//budget at 55mph
 budg55= (gallonsAt55*fcost)<=fbudget;
-budg60= gallonsAt60*fcost<=fbudget;
-budg75= gallonsAt75*fcost<=fbudget;
+//budget at 60mph
+budg60= (gallonsAt60*fcost)<=fbudget;
+//budget at 75mph
+budg75= (gallonsAt75*fcost)<=fbudget;
 
 
 
 console.log(`budget to cover goin 55mph:${budg55}\n`,
     `budget to cover goin 60mph:${budg60}\n`,
-    `budget to cover goin 75mph:${budg75}`)
+    `budget to cover goin 75mph:${budg75}`);
 
+//How long will the trip take, in hours?
+//at 55mph
+time55=1500/55;
 
+//at 60mph
+time60=1500/50;
+
+//at 75mph
+time75=1500/75;
+
+console.log(`How long will the trip take at 55mph: ${time55} hours\n`,
+    `How long will the trip take at 60mph: ${time60} hours\n`,
+    `How long will the trip take at 75mph: ${time75} hours`);
 
 
