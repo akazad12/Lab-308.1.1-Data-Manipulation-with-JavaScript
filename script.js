@@ -49,6 +49,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 const divby5 = (n1%5==0) && (n2%5==0) && (n3%5==0) && (n4%5==0)
 const firstBigLast = n1>n4
 const chain = ((n2-n1)*n3)/n4
+const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 
 console.log(chain)
 
