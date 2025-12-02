@@ -46,6 +46,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 //Part 1
+console.log ('Part 1 ----------------------')
 const divby5 = (n1%5==0) && (n2%5==0) && (n3%5==0) && (n4%5==0)
 console.log (`Numbers are divisible by 5 : ${divby5}.`)
 const firstBigLast = n1>n4
@@ -55,13 +56,14 @@ console.log (`Remainder of the Chain: ${chain}.`)
 const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 console.log (`Is under 25: ${isUnder25}.`)
 
+console.log ('Part 2 ----------------------')
 
 // Part 2: Practical 
 //How many gallons of fuel will you need for the entire trip?
 total = 1500;
 fbudget = 175;
 fcost = 3;
-
+console.log ('Problem 1 ----------------------')
 //gallons for the entire trip:
 //at 55mph
 gallonsAt55 = total/30;
@@ -73,7 +75,7 @@ console.log( `Gallons of fuel needed at 55mph: ${gallonsAt55}\n`,
              `Gallons of fuel needed at 60mph: ${gallonsAt60}\n`,
              `Gallons of fuel needed at 75mph: ${gallonsAt75}\n`);
 
-
+console.log ('Problem 2 ----------------------')
 //Will your budget be enough to cover the fuel expense?
 //budget at 55mph
 budg55= (gallonsAt55*fcost)<=fbudget;
@@ -82,12 +84,10 @@ budg60= (gallonsAt60*fcost)<=fbudget;
 //budget at 75mph
 budg75= (gallonsAt75*fcost)<=fbudget;
 
-
-
 console.log(`budget to cover goin 55mph:${budg55}\n`,
     `budget to cover goin 60mph:${budg60}\n`,
     `budget to cover goin 75mph:${budg75}`);
-
+console.log ('\nProblem 3 ----------------------')
 //How long will the trip take, in hours?
 //at 55mph
 time55=1500/55;
