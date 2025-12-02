@@ -46,6 +46,11 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 // Check if all numbers are divisible by 5. Cache the result in a variable.
+const divby5 = (n1%5==0) && (n2%5==0) && (n3%5==0) && (n4%5==0)
+
+
+
+
 // Check if the first number is larger than the last. Cache the result in a variable.
 // Accomplish the following arithmetic chain:
 // Subtract the first number from the second number.
