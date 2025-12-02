@@ -58,16 +58,32 @@ console.log (`Is under 25: ${isUnder25}.`)
 
 // Part 2: Practical 
 //How many gallons of fuel will you need for the entire trip?
-total = 1500
+total = 1500;
+fbudget = 175;
+fcost = 3;
 
 //gallons for the entire trip:
 //at 55mph
-gallonsAt55 = total/30
+gallonsAt55 = total/30;
 //at 60mph
-gallonsAt60 = total/28
+gallonsAt60 = total/28;
 //at 75mph
-gallonsAt75 = total/23
-console.log(gallonsAt55,gallonsAt60,gallonsAt75)
+gallonsAt75 = total/23;
+console.log( `Gallons of fuel needed at 55mph: ${gallonsAt55}\n`,
+             `Gallons of fuel needed at 60mph: ${gallonsAt60}\n`,
+             `Gallons of fuel needed at 75mph: ${gallonsAt75}\n`
+)
+
+//Will your budget be enough to cover the fuel expense?
+budg55= (gallonsAt55*fcost)<=fbudget;
+budg60= gallonsAt60*fcost<=fbudget;
+budg75= gallonsAt75*fcost<=fbudget;
+
+
+
+console.log(`budget to cover goin 55mph:${budg55}\n`,
+    `budget to cover goin 60mph:${budg60}\n`,
+    `budget to cover goin 75mph:${budg75}`)
 
 
 
