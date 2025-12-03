@@ -51,7 +51,7 @@ const divby5 = (n1%5==0) && (n2%5==0) && (n3%5==0) && (n4%5==0)
 console.log (`Numbers are divisible by 5 : ${divby5}.`)
 const firstBigLast = n1>n4
 console.log (`First number is larger than the last: ${firstBigLast}.`)
-const chain = ((n2-n1)*n3)/n4
+const chain = ((n2-n1)*n3)%n4
 console.log (`Remainder of the Chain: ${chain}.`)
 const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 console.log (`Is under 25: ${isUnder25}.`)
